@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+/************************************************************/
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    /*se eliminan los puntitos-viñetas*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    /*elimine la linea que estaba por debajo del texto*/
+    text-decoration: none;
+}
+nav .nav-right-section a{
+    margin-right: 25px;
+}
+
+nav .nav-right-section .MENU{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+        width: 20px;
+        height: 20px;
+        /*modifica el tamaño de la imagen al tamaño del contenedor*/
+        background-size: contain;
+        /*elimina la repeticion de elemento*/
+        background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    /*redondea los bordes*/
+    border-radius: 30px;
+    /*margen izquierdo*/
+    margin-left: 15px;
+    width: 35px;
+}
+
+/******************************************************/
+/*MAIN*/
+
+main{
+    margin-top: 110px;
+    text-align: center;
+}
+
+/*seccion logo*/
+main .main-logo{
+
+    width: 540px;
+    /*setea 0 al margen de arriba y abajo--
+    auto (setea en auto bordes de izquierda a derecha)*/
+    /*vertical - horizontal*/
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*logo*/
+main .main-logo img{
+    height: 120px;
+}
+
+/*seccion imput*/
+main .main-input{
+    width: 540px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*caja con bordes redondeados*/
+main .main-input-container{
+    /*borde - pide tres valores: anchura de linea, estilo y color*/
+    border: 1px solid #dfe1e5;
+    /*bordes redondeados*/
+    border-radius: 20px;
+    width: 540px;
+    /*componentes flexibles*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    height: 25px;
+    border: none;
+    /*outline - borde cuando sleccionas elemento*/
+    outline: none;
+    width: 500px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    height: 15px;
+    padding-left: 4%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    height: 17px;
+    width: 17px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    padding-right: 5%;
+}
+
+/*botones*/
+main .main-buttons{
+    /* vertial -- horizontal */
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /*inline-block: es para poner los div en la misma linea*/
+    display: inline-block;
+}
+
+main .main-buttons button{
+    background-color:#f8f9fa;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: #3c4043;
+    padding: 0 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/*efecto de sombra al pasar el mouse*/
+main .main-input-container:hover{
+ /* offset-x | offset-y | blur-radius | color */
+ box-shadow: 2px 2px 5px #20212447;
+}
+
+main .main-buttons button:hover{
+color: #202124;
+border: 1px solid #dadce0;
+box-shadow: 0 2px 2px #20212447;
+}
+/*********************************************************************/
+/* FOOTER */
+
+footer{
+    background-color: #c0c4c7;
+    margin: 105px auto;
+    width: 100%;
+    height: 60px;
+    display: flex;
+
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+}
+
+footer .footer-left a{
+    margin-right: 15px;
+}
+
+footer .footer-left{
+    width: 250px;
+    display: flex;
+    margin-right: 0  auto;
+    align-items: center;
+    background-position: center;
+}
+footer .footer-right a{
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+footer .footer-right{
+    margin-left: auto;
+    justify-content: right;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+}
